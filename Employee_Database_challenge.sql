@@ -1,7 +1,7 @@
 --Module 7 Challenge Deliverable 1, Number of Retiring Employees
 
 -- #1 - #4
-Drop table retirees_by_title
+Drop table retirement_titles
 SELECT e.emp_no,
 e.first_name, 
 e.last_name, 
@@ -9,7 +9,7 @@ t.title,
 t.from_date,
 t.to_date,
 s.salary
-INTO retirees_by_title
+INTO retirement_titles
 FROM employees as e
 INNER JOIN salaries as s
 ON (e.emp_no = s.emp_no)
@@ -62,3 +62,22 @@ GROUP BY title
 ORDER BY COUNT(title) DESC;
 
 SELECT * FROM retiring_titles
+
+--Module 7 Challenge Deliverable 2, The Employees Eligible for the Mentorship Program
+SELECT DISTINCT ON (e.emp_no)e.emp_no,
+	e.first_name,
+	e.last_name,
+	e.birth_date, 
+	de.from_date,
+	de.to_date,
+	t.title
+INTO mentorship_eligibility
+FROM employees as e
+INNER JOIN dept_emp as de
+ON (e.emp_no = de.emp_no)
+INNER JOIN titles as t
+ON (e.emp_no = t.emp_no)
+WHERE (de.to_date = '01/01/99') AND (e.birth_date BETWEEN '01/01/65' AND '12/31/65')
+ORDER BY emp_no;
+
+SELECT * FROM mentorship_eligibility
