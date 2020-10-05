@@ -12,14 +12,16 @@ There are four major points from the completed analysis:
 
 ![image](https://github.com/NassimNatA/Pewlett-Hackard-Analysis/blob/main/Screen%20Shot%202020-10-04%20at%2010.49.56%20PM.png)
 
-This was obtained by writing the query 
-insert code 
+This was obtained by writing the query below to create a table for retiring_titles
+![image](https://github.com/NassimNatA/Pewlett-Hackard-Analysis/blob/main/Screen%20Shot%202020-10-04%20at%2010.46.52%20PM.png)
 
 - The number of employees available to mentor in the top titles of the retirement pool is less than half of those leaving (significantly less). 
 
 ![image](https://github.com/NassimNatA/Pewlett-Hackard-Analysis/blob/main/Screen%20Shot%202020-10-04%20at%2010.49.07%20PM.png)
 
-This screenshot was generatd by the query:
+This screenshot was generatd by the query below to create a table for unqiue_titles using the COUNT function: 
+
+![image](https://github.com/NassimNatA/Pewlett-Hackard-Analysis/blob/main/Screen%20Shot%202020-10-04%20at%2010.48.41%20PM.png)
 
 
 - The mentorship program does not have any coverage to mentor for the Manager job title, which can be detrimental to cross-training within the company when the identified employees begin to retire. 
