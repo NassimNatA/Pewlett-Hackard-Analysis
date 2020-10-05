@@ -13,6 +13,7 @@ There are four major points from the completed analysis:
 ![image](https://github.com/NassimNatA/Pewlett-Hackard-Analysis/blob/main/Screen%20Shot%202020-10-04%20at%2010.49.56%20PM.png)
 
 This was obtained by writing the query below to create a table for retiring_titles
+
 ![image](https://github.com/NassimNatA/Pewlett-Hackard-Analysis/blob/main/Screen%20Shot%202020-10-04%20at%2010.46.52%20PM.png)
 
 - The number of employees available to mentor in the top titles of the retirement pool is less than half of those leaving (significantly less). 
@@ -39,8 +40,11 @@ From the screenshot of the eligible employees ready to mentor (grouped by job ti
 **Two additional queries or tables that may provide more insight into the upcoming "silver tsunami."**
 
 - The first query I added to provide more insight into the analysis was the query to generate a list of mentor-ready employees from the mentorship_eligibility table above: 
+
 ![image](https://github.com/NassimNatA/Pewlett-Hackard-Analysis/blob/main/Screen%20Shot%202020-10-04%20at%2011.07.31%20PM.png)
 
 - A second query that may provide more insight into this data is modify the query below that retrieves the employees who were born between 1952 and 1955. We can learn more about the distribution of incoming retirees by using the GROUP BY function to group by decade after putting the parameter 
-'WHERE (e.birth_date BETWEEN '01/01/52' AND '12/31/55')' 
+
+``WHERE (e.birth_date BETWEEN '01/01/52' AND '12/31/55')``
+
 ![image](https://github.com/NassimNatA/Pewlett-Hackard-Analysis/blob/main/Screen%20Shot%202020-10-04%20at%2010.47.49%20PM.png)
