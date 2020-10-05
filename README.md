@@ -21,24 +21,26 @@ This was obtained by writing the query below to create a table for retiring_titl
 
 This screenshot was generatd by the query below to create a table for unqiue_titles using the COUNT function: 
 
-![image](https://github.com/NassimNatA/Pewlett-Hackard-Analysis/blob/main/Screen%20Shot%202020-10-04%20at%2010.48.41%20PM.png)
+![image](https://github.com/NassimNatA/Pewlett-Hackard-Analysis/blob/main/Screen%20Shot%202020-10-04%20at%2011.07.31%20PM.png)
 
 
 - The mentorship program does not have any coverage to mentor for the Manager job title, which can be detrimental to cross-training within the company when the identified employees begin to retire. 
 
 ## Summary 
 
-*How many roles will need to be filled as the "silver tsunami" begins to make an impact?*
+**How many roles will need to be filled as the "silver tsunami" begins to make an impact?**
 
 The roles required to be filled as the "silver tsunami" begins are the following: Senior Engineer, Senior Staff, Engineer, Staff, Technique Leader, Assistant Engineer, Manager. All together, this is a total number of __ roles. 
 
-*Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?*
+**Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?**
 
 From the screenshot of the eligible employees ready to mentor (grouped by job title), it is evident that there are not enough retirement-ready employees in the respective departments to mentor the next generation. All together, there is a total number of 1549 eligible mentors. This is less than 50% of mentors available from the retirement-affected positions which can create a strain on the training process.
 
-*Two additional queries or tables that may provide more insight into the upcoming "silver tsunami."*
+**Two additional queries or tables that may provide more insight into the upcoming "silver tsunami."**
 
-- The first query I added to provide more insight into the analysis was the query to generate a list of mentor-ready employees from the mentorship_eligibility table
-- insert query
+- The first query I added to provide more insight into the analysis was the query to generate a list of mentor-ready employees from the mentorship_eligibility table above: 
+![image](https://github.com/NassimNatA/Pewlett-Hackard-Analysis/blob/main/Screen%20Shot%202020-10-04%20at%2011.07.31%20PM.png)
 
-- A second query that may provide more insight is 
+- A second query that may provide more insight into this data is modify the query below that retrieves the employees who were born between 1952 and 1955. We can learn more about the distribution of incoming retirees by using the GROUP BY function to group by decade after putting the parameter 
+'WHERE (e.birth_date BETWEEN '01/01/52' AND '12/31/55')' 
+![image](https://github.com/NassimNatA/Pewlett-Hackard-Analysis/blob/main/Screen%20Shot%202020-10-04%20at%2010.47.49%20PM.png)
